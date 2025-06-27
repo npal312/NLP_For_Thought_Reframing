@@ -1,0 +1,33 @@
+,"Model (ND - Non-Deterministic): F/R - Fluency, MP - Meaning Preservation, Q - Quality",,,,,,,,,,,,,,,,,,,,,,,
+,"NOTE: I'm giving some with <unk> tokens leeway, assuming the words could be anything that makes sense in the context. If it doesn't make sense with my own replacements, it still gets an ""N.""",,,,,,,,,,,,,,,,,,,,,,,
+,GRU,,,GRU ND,,,Seq2Seq + Attention,,,Seq2Seq + Attention ND,,,T5 Transformer,,,T5 Transformer ND,,,T5 Transformer All Data,,,T5 Transformer All Data ND,,
+,F/R,MP,Q,F/R,MP,Q,F/R,MP,Q,F/R,MP,Q,F/R,MP,Q,F/R,MP,Q,F/R,MP,Q,F/R,MP,Q
+1,Y,N,N,N,Y,N,N,Y,N,N,N,N,Y,N,N,Y,Y,Y,Y,Y,N,Y,Y,N
+2,Y,N,N,N,N,N,N,Y,N,N,N,N,Y,Y,Y,Y,Y,N,Y,Y,N,Y,Y,N
+3,Y,N,N,N,Y,N,N,N,N,N,N,N,Y,Y,Y,Y,Y,N,Y,Y,Y,N,Y,N
+4,Y,N,N,Y,Y,N,N,Y,N,N,N,N,Y,Y,Y,N,Y,Y,Y,Y,Y,N,Y,N
+5,Y,N,N,Y,N,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,Y,N,N,N,Y,N
+6,Y,N,N,N,N,N,N,N,N,N,N,N,Y,Y,Y,N,Y,N,Y,Y,Y,N,Y,N
+7,Y,N,N,N,N,N,N,N,N,N,N,N,Y,N,N,N,Y,N,Y,Y,Y,Y,Y,N
+8,Y,Y,N,N,N,N,N,Y,N,N,N,N,Y,N,N,Y,Y,N,Y,N,N,N,Y,N
+9,Y,N,N,N,N,N,N,Y,N,N,N,N,Y,Y,Y,N,Y,N,Y,Y,Y,Y,Y,Y
+10,Y,Y,N,N,N,N,N,N,N,N,N,N,Y,N,N,Y,N,Y,Y,Y,Y,Y,N,N
+11,Y,N,N,N,N,N,N,N,N,N,N,N,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,N
+12,Y,Y,N,N,N,N,N,Y,N,N,N,N,N,N,N,Y,N,N,Y,N,N,Y,N,N
+13,Y,Y,N,N,N,N,N,Y,N,N,N,N,N,Y,N,N,Y,N,Y,N,N,Y,N,N
+14,N,N,N,N,N,N,Y,N,N,N,N,N,Y,N,N,N,N,N,Y,N,N,Y,N,N
+15,Y,Y,N,Y,N,Y,N,Y,Y,N,N,N,N,Y,Y,Y,N,Y,Y,Y,Y,Y,Y,Y
+16,N,N,N,Y,N,N,N,N,N,N,N,N,Y,Y,N,Y,Y,N,Y,Y,N,Y,Y,N
+17,N,N,N,N,N,N,N,Y,N,N,N,N,N,Y,Y,Y,N,N,Y,Y,Y,Y,Y,N
+18,Y,N,N,Y,N,N,N,N,N,N,N,N,N,Y,N,N,Y,N,N,Y,N,Y,Y,N
+19,N,N,N,Y,N,N,N,N,N,N,N,N,Y,N,N,Y,Y,Y,Y,N,N,Y,Y,N
+20,Y,Y,Y,Y,N,N,N,Y,N,N,N,N,Y,Y,Y,Y,N,Y,Y,N,N,N,Y,Y
+21,Y,N,N,Y,N,N,Y,N,N,N,N,N,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,N
+22,Y,Y,N,Y,N,N,N,Y,N,N,N,N,Y,Y,Y,Y,N,N,Y,N,N,Y,N,N
+23,Y,N,N,Y,N,N,N,N,N,N,N,N,Y,Y,N,N,Y,N,Y,Y,N,N,Y,N
+24,Y,Y,Y,N,N,N,N,N,N,N,N,N,Y,Y,N,Y,Y,Y,Y,Y,Y,N,Y,N
+25,Y,N,N,N,N,N,N,Y,N,N,N,N,N,Y,N,Y,N,N,Y,Y,Y,Y,Y,N
+26,Y,N,N,N,N,N,N,N,N,N,N,N,Y,N,N,Y,Y,N,Y,N,N,Y,N,N
+Total,22,8,2,10,3,1,2,12,1,0,0,0,20,17,11,18,17,10,25,17,12,18,20,3
+,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,I think removing/fixing vocab could help basic words not get predicted,,,,,,Same-ish as other T5 Deterministic,,,,,,,,,,,
